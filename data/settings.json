@@ -1,0 +1,30 @@
+{
+  "appearance": {
+    "theme": "light",
+    "accent": "#3b9dff",
+    "font": "Inter, Segoe UI, sans-serif",
+    "fontSize": 14,
+    "radius": 12,
+    "sidebarWidth": 248,
+    "pagePadding": 28
+  },
+  "header": {
+    "showBreadcrumbs": true,
+    "showTitle": true,
+    "showDescription": true,
+    "title": "Рабочий стол",
+    "description": "Локальная платформа управления AI-системами",
+    "font": "Inter, Segoe UI, sans-serif",
+    "color": "#f2f1ff",
+    "letterSpacing": 0,
+    "transform": "none",
+    "paddingTop": 24,
+    "paddingRight": 22,
+    "paddingBottom": 24
+  },
+  "navigation": {
+    "compact": false,
+    "menu": null
+  },
+  "icons": {}
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PQlocalAgentOSv3",
+  "description": "Локальная рабочая среда управления ИИ-моделями, агентами, проектами и задачами: интерактивная операционная среда, статус-матрица и архитектурный отчет.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

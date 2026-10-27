@@ -1,0 +1,130 @@
+[
+  {
+    "id": "system-map",
+    "title": "Карта системы",
+    "description": "Интерактивная схема ролей, памяти проекта и потоков данных.",
+    "icon": "git-branch",
+    "content": "Архитектура взаимодействия агентов и инструментов.",
+    "system": true
+  },
+  {
+    "id": "diagnostics",
+    "title": "Диагностика",
+    "description": "Проверка API, файловой системы и локальных AI-сервисов.",
+    "icon": "activity",
+    "content": "Результаты реальных проверок локального сервера.",
+    "system": true
+  },
+  {
+    "id": "models",
+    "title": "Модели",
+    "description": "Состояние Ollama, доступные модели и проверочный запрос.",
+    "icon": "server",
+    "content": "Управление доступными локальными моделями.",
+    "system": true
+  },
+  {
+    "id": "agents",
+    "title": "AI-агенты",
+    "description": "Реестр агентов, роли и назначенные модели.",
+    "icon": "blocks",
+    "content": "Управление агентами платформы.",
+    "system": true
+  },
+  {
+    "id": "projects",
+    "title": "Проекты",
+    "description": "Рабочие пространства и пути к проектам.",
+    "icon": "files",
+    "content": "Управление проектами.",
+    "system": true
+  },
+  {
+    "id": "tasks",
+    "title": "Задачи",
+    "description": "Создание задач, запуск через локальную модель и результаты.",
+    "icon": "activity",
+    "content": "Очередь задач и история выполнения.",
+    "system": true
+  },
+  {
+    "id": "dashboard",
+    "title": "Рабочий стол",
+    "description": "Обзор локальной платформы и состояния системы.",
+    "icon": "layout-dashboard",
+    "content": "Добро пожаловать в PQlocalAgentOSv3. Здесь будет собираться управление локальными AI-системами.",
+    "system": true
+  },
+  {
+    "id": "chat",
+    "title": "Чат",
+    "description": "Общение с локальными моделями Ollama.",
+    "icon": "file-text",
+    "content": "Диалог с выбранной локальной моделью.",
+    "system": true
+  },
+  {
+    "id": "interface-settings",
+    "title": "Настройки интерфейса",
+    "description": "Управление общим оформлением и шапкой страниц.",
+    "icon": "sliders-horizontal",
+    "content": "Настройте оформление приложения через панель настроек.",
+    "system": true
+  },
+  {
+    "id": "pages",
+    "title": "Страницы",
+    "description": "Создание и управление страницами приложения.",
+    "icon": "files",
+    "content": "Создавайте страницы без ручного редактирования файлов.",
+    "system": true
+  },
+  {
+    "id": "github",
+    "title": "GitHub",
+    "description": "Состояние подключения к репозиторию.",
+    "icon": "github",
+    "content": "Подключите GitHub через переменную окружения GITHUB_TOKEN.",
+    "system": true
+  },
+  {
+    "id": "system-log",
+    "title": "Журнал системы",
+    "description": "История действий и проверок.",
+    "icon": "activity",
+    "content": "Журнал событий приложения.",
+    "system": true
+  },
+  {
+    "id": "menu-builder",
+    "title": "Конструктор меню",
+    "description": "Структура навигации и привязка пунктов к страницам и модулям.",
+    "icon": "list-tree",
+    "content": "Настройте меню приложения.",
+    "system": true
+  },
+  {
+    "id": "modules",
+    "title": "Модули",
+    "description": "Установка, каталог и связи между модулями.",
+    "icon": "blocks",
+    "content": "Управляйте модульной системой.",
+    "system": true
+  },
+  {
+    "id": "permissions",
+    "title": "Разрешения",
+    "description": "Управление доступом AI-агентов к локальным папкам и GitHub.",
+    "icon": "shield-check",
+    "content": "Настройте права доступа агентов.",
+    "system": true
+  },
+  {
+    "id": "system-instructions",
+    "title": "Системные инструкции",
+    "description": "Базовые инструкции для ролей агентов и план взаимодействия.",
+    "icon": "file-text",
+    "content": "Управление системными инструкциями.",
+    "system": true
+  }
+]

@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --shell-padding-top: 24px;
+    --shell-padding-bottom: 24px;
+    --shell-padding-x: 22px;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    /* Theme tokens default to Dark */
+    --bg-canvas: #0c0f17;
+    --bg-surface: #111420;
+    --bg-card: #151926;
+    --bg-elevated: #1b2133;
+    --border-subtle: #1e2638;
+    --border-strong: #2a354c;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+  }
+
+  html.light,
+  [data-theme="light"] {
+    /* Soft slate / blue-gray palette */
+    --bg-canvas: #f1f5f9;
+    --bg-surface: #ffffff;
+    --bg-card: #ffffff;
+    --bg-elevated: #f8fafc;
+    --border-subtle: #e2e8f0;
+    --border-strong: #cbd5e1;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.35);
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.25);
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.45);
+}
+
+/* Pulse animation for PQ logo loader */
+@keyframes pq-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+    filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
+  }
+}
+
+.pq-logo-active {
+  animation: pq-pulse 2.4s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   Light Theme - Soft Slate/Blue-gray Overrides for High Contrast & Comfort
+   ========================================================================== */
+
+html.light body {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* App container */
+html.light .bg-\[\#0c0f17\],
+html.light .bg-\[\#0f1117\],
+html.light .bg-slate-950 {
+  background-color: #ffffff;
+}
+
+/* Header & navigation backgrounds */
+html.light header.bg-slate-950\/90 {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+html.light aside.bg-slate-950 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Cards & panels */
+html.light .bg-slate-900 {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+html.light .fixed .bg-slate-900 {
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .bg-slate-900\/90 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-950\/60,
+html.light .bg-slate-950\/80 {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-slate-950\/40,
+html.light .bg-slate-950\/50 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-slate-800\/80,
+html.light .bg-slate-800\/70,
+html.light .bg-slate-800\/50,
+html.light .bg-slate-800\/40 {
+  background-color: #f8fafc !important;
+}
+
+/* Borders */
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/70,
+html.light .border-slate-800\/50,
+html.light .border-slate-800\/40 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-slate-700,
+html.light .border-slate-700\/80,
+html.light .border-slate-700\/50 {
+  border-color: #cbd5e1 !important;
+}
+
+html.light .divide-slate-800 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e2e8f0 !important;
+}
+
+/* Text colors */
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300 {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Hover states */
+html.light .hover\:bg-slate-900:hover {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-800\/70:hover,
+html.light .hover\:bg-slate-800\/50:hover {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .hover\:text-slate-100:hover,
+html.light .hover\:text-slate-200:hover {
+  color: #0f172a !important;
+}
+
+/* Form controls & inputs */
+html.light input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input:focus,
+html.light textarea:focus,
+html.light select:focus {
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 1px #0284c7 !important;
+}
+
+/* Terminal exception - Keep terminal authentic and highly readable */
+html.light .terminal-surface {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-color: #1e293b !important;
+}
+
+html.light .terminal-surface .text-slate-100,
+html.light .terminal-surface .text-slate-200,
+html.light .terminal-surface .text-slate-300 {
+  color: #e2e8f0 !important;
+}
+
+html.light .terminal-surface .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* High-contrast cyan accents in light theme */
+html.light .text-cyan-400 {
+  color: #0284c7 !important;
+}
+
+html.light .text-cyan-300 {
+  color: #0369a1 !important;
+}
+
+html.light .border-cyan-500\/30,
+html.light .border-cyan-500\/50 {
+  border-color: #38bdf8 !important;
+}
+
+html.light .bg-cyan-950\/70,
+html.light .bg-cyan-500\/10,
+html.light .bg-cyan-500\/20 {
+  background-color: #f0f9ff !important;
+  color: #0284c7 !important;
+}
+
