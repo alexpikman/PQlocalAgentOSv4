@@ -4,7 +4,7 @@ cd /d "%~dp0"
 echo ============================================================
 echo   PQlocalAgentOSv4 - Запуск рабочей среды агентов
 echo ============================================================
-set "PQ_PORT=8765"
+set "PQ_PORT=8766"
 if not exist data mkdir data
 
 python --version >nul 2>&1

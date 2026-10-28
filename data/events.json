@@ -1,5 +1,35 @@
 [
   {
+    "time": "2026-10-28T03:20:22+03:00",
+    "action": "server.start",
+    "detail": "http://127.0.0.1:8765"
+  },
+  {
+    "time": "2026-10-28T03:20:22+03:00",
+    "action": "system_instruction.migrate",
+    "detail": "1 instructions"
+  },
+  {
+    "time": "2026-10-28T03:20:22+03:00",
+    "action": "system_instruction.template_missing",
+    "detail": "DISPATCHER"
+  },
+  {
+    "time": "2026-10-28T03:20:07+03:00",
+    "action": "server.start",
+    "detail": "http://127.0.0.1:8765"
+  },
+  {
+    "time": "2026-10-28T03:20:07+03:00",
+    "action": "system_instruction.migrate",
+    "detail": "1 instructions"
+  },
+  {
+    "time": "2026-10-28T03:20:07+03:00",
+    "action": "system_instruction.template_missing",
+    "detail": "DISPATCHER"
+  },
+  {
     "time": "2026-10-27T22:52:03+00:00",
     "action": "server.start",
     "detail": "http://127.0.0.1:8765"
